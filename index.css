@@ -1,0 +1,509 @@
+* {
+    font-family: 'Playfair Display';
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 243, 205);
+}
+
+.nav {
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.burger {
+    height: 25px;
+    width: 35px;
+    padding: 5px;
+}
+
+.line1,
+.line2 {
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    margin: 8px 0;
+}
+
+.line1 {
+    width: 85%;
+}
+
+.line2 {
+    width: 65%;
+}
+
+.navlist {
+    height: 100vh;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: -10px 0 10px rgb(151, 144, 120);
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.x {
+    right: 5%;
+    top: 5%;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+}
+
+.line3,
+.line4 {
+    height: 2px;
+    width: 80%;
+    background-color: black;
+}
+
+.line3 {
+    transform: rotate(45deg);
+}
+
+.line4 {
+    transform: rotate(-45deg);
+}
+
+
+
+
+.link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+
+}
+
+.wrap {
+    height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.foodanddrinks {
+    height: 5vh;
+    width: 10%;
+    display: flex;
+    transform: rotate(-90deg);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+}
+
+.herosection {
+    height: 120vh;
+    width: 90%;
+    margin: 0% auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.herotext {
+    height: 20vh;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+
+.heroimage {
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.pic1,
+.pic3 {
+    transition: .2s ease;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    filter: grayscale(100%);
+}
+
+.pic1 {
+    left: 3%;
+    bottom: 0%;
+}
+
+.pic3 {
+    right: 0%;
+    bottom: 0%;
+}
+
+.pic1:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.safe {
+    font-weight: bold;
+    font-size: 130px;
+    text-transform: capitalize;
+}
+
+.locations {
+    width: 40%;
+    left: 30%;
+    top: 55%;
+    position: absolute;
+    text-align: center;
+}
+
+.locationsbutton {
+    width: 200px;
+    height: 60px;
+    color: rgb(141, 120, 62);
+    /* background-color: rgb(141, 120, 62); */
+    border: rgb(141, 120, 62) 2px solid;
+    background-color: transparent;
+    border-radius: 4px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+.aboutus {
+    height: 130vh;
+    width: 70%;
+    position: relative;
+    margin: 10% auto;
+}
+
+.image2 {
+    position: absolute;
+    height: 600px;
+    width: 450px;
+    right: 7%;
+    top: 30%;
+    z-index: 5;
+    filter: grayscale(100%);
+}
+
+.us {
+    height: 50vh;
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    padding: 7px;
+}
+
+.founded {
+    width: 100%;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.explain {
+    width: 80%;
+}
+
+.block {
+    background-color: black;
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    right: 3%;
+    top: 22%;
+}
+
+.open {
+    height: 80vh;
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.newyear {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.check {
+    margin: 10% auto;
+
+}
+
+.content1 {
+    height: 90vh;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.lunch {
+    font-weight: bolder;
+    font-size: 120px;
+    width: 10%;
+    margin: 20px 50px;
+}
+
+.eats {
+    background-color: white;
+    padding: 12px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    height: 400px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.lunchmeal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    height: 10vh;
+    margin: 10px 0;
+}
+
+
+.description {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.content2 {
+    height: 150vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20% 0;
+}
+
+.largetexts {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.largetext {
+    font-weight: bolder;
+    font-size: 300px;
+}
+
+.drinkmenu {
+    height: 700px;
+    width: 45%;
+    margin: 15% auto;
+    background-color: white;
+    z-index: 5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.drinkshere {
+    font-size: 50px;
+    text-decoration: underline 2px black;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.drinktitle {
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.ingredients,
+.price {
+    font-family: 'Poppins';
+}
+
+.ingredients {
+    font-size: 15px;
+}
+
+.actualdrinks {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.drinklist {
+    width: 48%;
+}
+
+.content3 {
+    height: 100vh;
+    width: 70%;
+    margin: 15% auto;
+}
+
+.dinner {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.priceslol {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0 0 5% 0;
+}
+
+.priceslol::after {
+    content: ' ';
+    display: block;
+    background-color: black;
+    height: 1px;
+    width: 500px;
+}
+
+.dinnermenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content4 {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+.donate {
+    width: 50%;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 5% auto;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1 {
+    height: 130px;
+    width: 130px;
+    left: 10%;
+    top: 30%;
+}
+
+.circle2 {
+    height: 70px;
+    width: 70px;
+    right: 10%;
+    top: 5%;
+}
+
+.circle3 {
+    height: 220px;
+    width: 220px;
+    right: 10%;
+    bottom: 10%;
+}
+
+.content5 {
+    height: 100vh;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+
+.brought {
+    width: 30%;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.pro {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 50px 0;
+}
+
+.footer {
+    height: 25vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+
+.stuff {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+}
+
+.creds {
+    margin: 10px 0;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+.creds>li {
+    margin: 2px 0;
+}
+
+.icons>li>i {
+    margin: 0 10px 0 0;
+    color: rgb(133, 133, 133);
+    font-size: 25px;
+}
